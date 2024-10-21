@@ -81,9 +81,29 @@ Weights initializer |	Glorot uniform |	Glorot uniform
 
 # 
 
+`Table. Hyperparameters to train baseline YOLO v4 localization model`
 
+Hyperparameter |	Value
+------------- | -------------
+Network size |	608 × 608
+Batch size | 64
+Subdivisions	| 32
+Learning rate	| 0.001
+Learning rate decay	| 0.0005
+Anchors, scale 1 (small object)	| (12, 16), (19, 36), (40, 28)
+Anchors, scale 2 (medium object)	| (36, 75), (76, 55), (72, 146)
+Anchors, scale 3 (large object) | (142, 110), (192, 243), (459, 401)
+Saturation	| 1.5
+Exposure	| 1.5
+Hue	| 0.1
 
+#
 
-
-
+`Table. Grouping 43 classes into 4 super-classes`
+Super-class	| Related class indexes | Related	group description
+------------- | -------------  | -------------
+1 |	0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 15, 16	| Circular traffic signs with white background and red border line
+2	| 11, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31	| Triangular traffic signs with white background and red border line
+3	| 33, 34, 35, 36, 37, 38, 39, 40	| Circular traffic signs with blue background
+4	| 6, 12, 13, 14, 17, 32, 41, 42	| All other types of traffic signs
 
